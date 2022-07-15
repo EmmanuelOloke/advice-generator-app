@@ -61,6 +61,9 @@ body {
     .main-content {
         max-width: 45%;
     }
+    .divider {
+        width: 100%;
+    }
 }
 
 .colors {
