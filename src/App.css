@@ -57,6 +57,12 @@ body {
     width: 1.8rem;
 }
 
+@media screen and (min-width: 375px) {
+    .main-content {
+        max-width: 45%;
+    }
+}
+
 .colors {
     color: hsl(150, 100%, 66%);
     color: hsl(217, 19%, 38%);
