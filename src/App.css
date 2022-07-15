@@ -67,6 +67,9 @@ body {
     .divider {
         width: 100%;
     }
+    .dice-container {
+        left: 41.5%;
+    }
 }
 
 .colors {
