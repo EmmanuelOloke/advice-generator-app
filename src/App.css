@@ -75,6 +75,7 @@ body {
         width: 100%;
     }
     .dice-container {
+        top: 90%;
         left: 43%;
     }
     .dice {
