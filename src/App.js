@@ -1,21 +1,43 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
 import './App.css';
 import patternDivider from './images/pattern-divider-mobile.svg';
 import diceIcon from './images/icon-dice.svg';
 
 function App() {
+  const [advice, setAdvice] = useState({});
+
+  const fetchAdvice = async () => {
+    try {
+      const response = await fetch('https://api.adviceslip.com/advice');
+      const json = await response.json();
+      if (response.status === 200) {
+        setAdvice(json.slip);
+      }
+    } catch (error) {
+      console.log('Something went wrong while fetching advice', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchAdvice();
+  }, []);
+
   return (
-    <main className="main-content">
-      <p className="advice-header">ADVICE #117</p>
-      <p className="advice">
-        "It is easy to sit up and take notice, what's difficult is getting up
-        and taking action."
-      </p>
-      <img className="divider" src={patternDivider} alt="pattern divider" />
-      <div className="dice-container">
-        <img className="dice" src={diceIcon} alt="dice" />
-      </div>
-    </main>
+    <>
+      {advice.id ? (
+        <main className="main-content">
+          <p className="advice-header">ADVICE #{advice.id}</p>
+          <p className="advice">"{advice.advice}"</p>
+          <img className="divider" src={patternDivider} alt="pattern divider" />
+          <div className="dice-container" onClick={fetchAdvice}>
+            <img className="dice" src={diceIcon} alt="dice" />
+          </div>
+        </main>
+      ) : (
+        <h1>Loading...</h1>
+      )}
+    </>
   );
 }
 
