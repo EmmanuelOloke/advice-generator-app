@@ -82,11 +82,3 @@ body {
         width: 1.5rem;
     }
 }
-
-.colors {
-    color: hsl(150, 100%, 66%);
-    color: hsl(217, 19%, 38%);
-    color: hsl(217, 19%, 24%);
-    color: hsl(218, 23%, 16%);
-    color: hsl(193, 38%, 86%);
-}
