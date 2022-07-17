@@ -4,6 +4,8 @@ import './App.css';
 import patternDivider from './images/pattern-divider-mobile.svg';
 import diceIcon from './images/icon-dice.svg';
 
+import LoadingSpinner from '../src/components/LoadingSpinner';
+
 function App() {
   const [advice, setAdvice] = useState({});
 
@@ -35,7 +37,7 @@ function App() {
           </div>
         </main>
       ) : (
-        <h1>Loading...</h1>
+        <LoadingSpinner />
       )}
     </>
   );
