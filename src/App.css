@@ -57,7 +57,7 @@ body {
 }
 
 .dice {
-    width: 1.8rem;
+    width: 1.5rem;
 }
 
 .dice-container:hover {
@@ -77,9 +77,9 @@ body {
     }
     .dice-container {
         top: 90%;
-        left: 43%;
+        left: 44%;
     }
     .dice {
-        width: 1.5rem;
+        width: 1.45rem;
     }
 }
