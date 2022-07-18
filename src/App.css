@@ -22,7 +22,7 @@ body {
     width: 90%;
     text-align: center;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 3rem 1.5rem;
 }
 
 .advice-header {
@@ -46,7 +46,10 @@ body {
 
 .dice-container {
     position: absolute;
-    left: 39%;
+    top: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
     background-color: hsl(150, 100%, 66%);
     border-radius: 50%;
     padding: 1.3rem;
@@ -57,7 +60,7 @@ body {
 }
 
 .dice {
-    width: 1.5rem;
+    width: 1.45rem;
 }
 
 .dice-container:hover {
@@ -77,7 +80,9 @@ body {
     }
     .dice-container {
         top: 90%;
-        left: 44%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
     }
     .dice {
         width: 1.45rem;
