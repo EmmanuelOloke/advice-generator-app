@@ -1,6 +1,6 @@
 # Frontend Mentor - Advice generator app
 
-![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Advice generator app coding challenge](https://res.cloudinary.com/dz209s6jk/image/upload/…to:good,w_900/Challenges/syo43ktrlu3huqaqye2c.jpg)
 
 ## Welcome! 👋
 
