@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import './App.css';
-import patternDivider from './images/pattern-divider-mobile.svg';
+import patternDivider from './images/pattern-divider-desktop.svg';
 import diceIcon from './images/icon-dice.svg';
 
 import LoadingSpinner from '../src/components/LoadingSpinner';
