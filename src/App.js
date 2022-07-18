@@ -30,7 +30,7 @@ function App() {
       {advice.id ? (
         <main className="main-content">
           <p className="advice-header">ADVICE #{advice.id}</p>
-          <p className="advice">"{advice.advice}"</p>
+          <h1 className="advice">"{advice.advice}"</h1>
           <img className="divider" src={patternDivider} alt="pattern divider" />
           <div className="dice-container" onClick={fetchAdvice}>
             <img className="dice" src={diceIcon} alt="dice" />
