@@ -11,7 +11,9 @@ function App() {
 
   const fetchAdvice = async () => {
     try {
-      const response = await fetch('https://api.adviceslip.com/advice');
+      const response = await fetch('https://api.adviceslip.com/advice', {
+        cache: 'no-cache',
+      });
       const json = await response.json();
       if (response.status === 200) {
         setAdvice(json.slip);
